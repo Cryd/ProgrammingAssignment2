@@ -42,7 +42,7 @@ makeCacheMatrix <- function(x = matrix()) {
 # non-invertible matrix.
 
 cacheSolve <- function(x, ...) {
-		
+		## Return a matrix that is the inverse of 'x'
         inv <- x$getinv()	# fetch the inverse matrix from cache
         if(!is.null(inv)) {	# if "inv" is not NULL returns the
 							# precomputed inverse
